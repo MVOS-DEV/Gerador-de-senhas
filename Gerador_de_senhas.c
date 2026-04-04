@@ -17,6 +17,7 @@ int main() {
     // Lista de símbolos fixa (não mexer nela no loop)
     char lista_simbolos[] = "!@#$-+*()"; 
 
+    // Serve para que a senha seja realmente aleatória
     srand(time(NULL));
 
     printf("Gerador de Senhas\n");
@@ -42,7 +43,7 @@ int main() {
     parte = parte /4;
     
     for (i = 0; i < parte; i++) {
-        LetraMaiuscula[i] = 'A' + rand() % 26;            // Maiúsculas
+     LetraMaiuscula[i] = 'A' + rand() % 26;            // Maiúsculas
         LetraMinuscula[i] = 'a' + rand() % 26;            // Minúsculas
         Numeros[i] = '0' + rand() % 10;            // Números
         Caracteres[i] = lista_simbolos[rand() % 9];  // Símbolos (pega da lista)
@@ -58,3 +59,12 @@ int main() {
 
     return 0;
 }
+
+
+
+/*
+
+BY MVOS.DEVELOPER
+THANKS :)
+
+*/
