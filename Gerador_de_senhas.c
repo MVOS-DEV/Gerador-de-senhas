@@ -3,6 +3,15 @@
 #include <time.h>
 
 int main() {
+
+
+    printf("    __  ___  _    __   ____     _____\n");
+    printf("   /  |/  / | |  / /  / __ \\  / ___/\n");
+    printf("  / /|_/ /  | | / /  / / / /  \\__ \\ \n");
+    printf(" / /  / /   | |/ /  / /_/ /  ___/ / \n");
+    printf("/_/  /_/    |___/   \\____/  /____/  \n");
+    printf("                                                 \n");
+
     int i, n, parte;
     char LetraMaiuscula[100], LetraMinuscula[100], Numeros[100], Caracteres[100];
     // Lista de símbolos fixa (não mexer nela no loop)
@@ -33,7 +42,7 @@ int main() {
     parte = parte /4;
     
     for (i = 0; i < parte; i++) {
-     LetraMaiuscula[i] = 'A' + rand() % 26;            // Maiúsculas
+        LetraMaiuscula[i] = 'A' + rand() % 26;            // Maiúsculas
         LetraMinuscula[i] = 'a' + rand() % 26;            // Minúsculas
         Numeros[i] = '0' + rand() % 10;            // Números
         Caracteres[i] = lista_simbolos[rand() % 9];  // Símbolos (pega da lista)
